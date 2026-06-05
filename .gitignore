@@ -1,0 +1,65 @@
+# Directorios de compilación
+build/
+cmake-build-*/
+out/
+
+# Archivos generados por CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeUserPresets.json
+compile_commands.json
+
+# Binarios compilados
+cnc_controller
+*.exe
+*.out
+*.app
+
+# Archivos objeto y librerías
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+
+# Archivos temporales y de respaldo
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.DS_Store
+
+# Editor de configuraciones
+.vscode/
+.idea/
+*.code-workspace
+.vs/
+
+# Ejecutables y scripts generados
+*.run
+*.sh~
+build.sh~
+run.sh~
+
+# Archivos de datos generados (evita subir salidas de pruebas)
+*.nc
+!gcode/sample_job.nc   # excepto el archivo de ejemplo
+*.gcode
+*.csv
+*.txt
+output/
+
+# Configuración local (no versionar cambios personales)
+config/machine_config.local.ini
+*.local.ini
+
+# Instalación local de bcm2835 (si el script la instala en ./local)
+bcm2835-*/
+local/
+
