@@ -49,14 +49,14 @@ run.sh~
 
 # Archivos de datos generados (evita subir salidas de pruebas)
 *.nc
-!gcode/sample_job.nc   # excepto el archivo de ejemplo
+#!gcode/sample_job.nc   # excepto el archivo de ejemplo
 *.gcode
 *.csv
 *.txt
 output/
 
 # Configuración local (no versionar cambios personales)
-config/machine_config.local.ini
+#config/machine_config.local.ini
 *.local.ini
 
 # Instalación local de bcm2835 (si el script la instala en ./local)
